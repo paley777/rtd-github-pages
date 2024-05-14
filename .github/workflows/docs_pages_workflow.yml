@@ -22,13 +22,9 @@ jobs:
         git clone --depth 1 "https://github.com/${GITHUB_REPOSITORY}.git" .
       shell: bash
 
-    - name: Add execute permission to buildDocs.sh
-      run: |
-        chmod +x docs/buildDocs.sh
-      shell: bash
-
     - name: Execute script to build our documentation and update pages
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      run: "docs/buildDocs.sh"
+      run: |
+        chmod +x docs/buildDocs.sh
       shell: bash
