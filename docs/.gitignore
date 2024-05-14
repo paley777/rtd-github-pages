@@ -1,0 +1,8 @@
+*.swp
+/_build
+/doctrees
+EOF
+ 
+cat > .gitignore <<EOF
+__pycache__
+*.pyc
