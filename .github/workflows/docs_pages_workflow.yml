@@ -22,6 +22,9 @@ jobs:
         git clone --depth 1 "https://github.com/${GITHUB_REPOSITORY}.git" .
       shell: bash
 
+    - name: Configure Git safe directory
+      run: git config --global --add safe.directory /__w/rtd-github-pages/rtd-github-pages
+      
     - name: Make buildDocs.sh executable
       run: chmod +x docs/buildDocs.sh
 
