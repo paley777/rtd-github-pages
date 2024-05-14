@@ -26,9 +26,9 @@ jobs:
       run: git config --global --add safe.directory /__w/rtd-github-pages/rtd-github-pages
 
     - name: Debugging: List directory structure
-        run: |
-          pwd
-          ls -R
+      run: |
+        pwd
+        ls -R
 
     - name: Make buildDocs.sh executable
       run: chmod +x docs/buildDocs.sh
