@@ -22,8 +22,8 @@ jobs:
         git clone --depth 1 "https://github.com/${GITHUB_REPOSITORY}.git" .
       shell: bash
 
-      - name: Make buildDocs.sh executable
-        run: chmod +x docs/buildDocs.sh
+    - name: Make buildDocs.sh executable
+      run: chmod +x docs/buildDocs.sh
 
     - name: Execute script to build our documentation and update pages
       env:
