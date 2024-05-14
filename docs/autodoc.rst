@@ -2,7 +2,7 @@
  
 .. contents::
  
-helloWorld.py
+helloWorld.py Automodule Check
 =============
  
 .. automodule:: helloWorld
