@@ -12,10 +12,11 @@
 <h2 id="started">🚀 Getting started</h2>
 
 The process of automating this documentation creation is:
-1. Generate documentation (sphinx-docs) automatically when a commit is pushed to the repository.
-2. After being generated automatically, the results of the html documentation build are moved to a new branch called "gh-pages".
-3. We have set the branch as a Github Pages so that it can be used to host the documentation.
-4. All the processes above occur repeatedly when there are changes via push commit automatically. Without the need to change rst files.
+1.Autodoc calls the .py file automatically to generate documentation.
+2. Generate documentation (sphinx-docs) automatically when a commit is pushed to the repository.
+3. After being generated automatically, the results of the html documentation build are moved to a new branch called "gh-pages".
+4. We have set the branch as a Github Pages so that it can be used to host the documentation.
+5. All the processes above occur repeatedly when there are changes via push commit automatically. Without the need to change rst files.
 
 Files used:
 1. docs_pages_workflow.yml as a file executed by GitHub Actions.
